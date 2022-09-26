@@ -55,7 +55,8 @@ const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbersAvg) {
   if (numbersAvg.length === 0) return null;
-  const average = numbersAvg => numbersAvg.reduce((a,b) => a + b, 0) / numbersAvg.length;
+ const suma41 = sumNumbers(numbersAvg)
+ return suma41 / numbersAvg.length
 }
 
 
@@ -64,7 +65,11 @@ const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smar
 
 function averageWordLength(wordsArr) { 
   if (wordsArr.length === 0) return null;
-  const average = wordsArr => wordsArr.reduce((a,b) => a + b, 0) / wordsArr.length;
+  let words2numbers = 0
+for (let i = 0; i < wordsArr.length; i++)
+words2numbers = words2numbers + wordsArr[i].length 
+return words2numbers / wordsArr.length
+
 }
 
 
